@@ -43,7 +43,32 @@ public class MainActivity extends AppCompatActivity {
         numbers.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Hello world", Toast.LENGTH_SHORT).show();
+                Intent numbersIntent = new Intent(MainActivity.this,NumbersActivity.class);
+                startActivity(numbersIntent);
+            }
+        });
+
+        family.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent familyIntent = new Intent(MainActivity.this,FamilyActivity.class);
+                startActivity(familyIntent);
+            }
+        });
+
+        colors.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent colorsIntent = new Intent(MainActivity.this,ColorsActivity.class);
+                startActivity(colorsIntent);
+            }
+        });
+
+        phrases.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent phrasesIntent = new Intent(MainActivity.this,PhrasesActivity.class);
+                startActivity(phrasesIntent);
             }
         });
 
